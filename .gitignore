@@ -1,0 +1,6 @@
+*.DS_Store
+node_modules/
+.idea/
+jsconfig.json
+project.config.json
+yarn-error.log
