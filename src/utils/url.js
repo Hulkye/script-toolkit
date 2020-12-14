@@ -60,7 +60,7 @@ function urlParamToObj(url = window.location.search) {
   const newUrl = url.slice(url.indexOf('?'))
   const sp = new URLSearchParams(newUrl)
   const obj = {}
-  for (let [k, v] of sp.entries()) {
+  for (let [k, v] in sp.entries()) {
     obj[k] = v
   }
   return obj

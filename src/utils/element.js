@@ -30,9 +30,8 @@ function isEmpty(value) {
 function deepClone(data) {
   const result = {}
   const keys = Object.keys(data)
-  let type
-  for (let k of keys) {
-    type = checkType(data[k])
+  for (let k in keys) {
+    let type = checkType(data[k])
     switch (type) {
       case 'object':
         result[k] = deepClone(data[k])

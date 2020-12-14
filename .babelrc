@@ -1,17 +1,17 @@
 {
   "presets": [
     [
-      "@babel/env",
+      "@babel/preset-env",
       {
         "targets": {
-          "edge": "17",
-          "firefox": "60",
-          "chrome": "67",
-          "safari": "11.1"
+          "browsers": "last 10 versions, > 1%, ie >= 9, Android >= 4.4, iOS >= 8",
+          "node": "current"
         },
-        "useBuiltIns": "usage"
+        "modules": false,
+        "useBuiltIns": "entry"
       }
     ]
   ],
-  "plugins": []
+  "sourceType": "unambiguous", // 严格区分commonJS文件和ES6文件
+  "ignore": ["node_modules"]
 }
