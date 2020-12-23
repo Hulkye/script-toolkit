@@ -1,6 +1,6 @@
 {
   "name": "script-toolkit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Common javascript toolkits",
   "main": "dist/index.js",
   "scripts": {
@@ -10,11 +10,21 @@
   "keywords": [
     "js",
     "javascript",
+    "jslib",
+    "jstools",
     "toolkit",
     "util",
     "commom"
   ],
-  "author": "Hulkye 137940587@qq.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hulkye/script-toolkit"
+  },
+  "bugs": {
+    "url": "https://github.com/Hulkye/script-toolkit/issues",
+    "email": "137940587@qq.com"
+  },
+  "author": "Hulkye",
   "license": "MIT",
   "devDependencies": {
     "acorn": "^8.0.4",
