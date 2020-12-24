@@ -5,6 +5,8 @@
  * @returns { Array } 是一个伪数组
  */
 
+import getCookie from './getCookie'
+
 function removeCookie(name) {
   const date = new Date()
   date.setTime(date.getTime() - 1)

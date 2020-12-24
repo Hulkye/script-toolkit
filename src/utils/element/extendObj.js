@@ -7,6 +7,8 @@
  * extend({a: 1}, {a: 2, b: 1})   // { a: 2, b: 1 }
  */
 
+import deepClone from './deepClone'
+
 function extendObj(...arg) {
   return deepClone(Object.assign({}, ...arg))
 }

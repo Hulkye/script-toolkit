@@ -7,12 +7,12 @@
  */
 
 function htmlEncode(text, useDom) {
-  if (text.length == 0) return ''
+  if (text.length === 0) return ''
 
   let output = ''
   if (useDom) {
     let el = document.createElement('div')
-    el.textContent != undefined ? (el.textContent = text) : (el.innerText = text)
+    el.textContent !== undefined ? (el.textContent = text) : (el.innerText = text)
     output = el.innerHTML
     el = null
   } else {
@@ -20,8 +20,8 @@ function htmlEncode(text, useDom) {
     output = output.replace(/</g, '&lt;')
     output = output.replace(/>/g, '&gt;')
     output = output.replace(/\s/g, '&nbsp;')
-    output = output.replace(/\'/g, '&#39;')
-    output = output.replace(/\"/g, '&quot;')
+    output = output.replace(/\\'/g, '&#39;')
+    output = output.replace(/\\"/g, '&quot;')
   }
   return output
 }

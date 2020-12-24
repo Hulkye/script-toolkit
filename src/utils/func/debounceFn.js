@@ -7,7 +7,7 @@
  */
 
 export function debounceFn(fn, t, immediate = true) {
-  if (typeof fn !== 'function') throw new Error(`第一个参数必须是方法`)
+  if (typeof fn !== 'function') throw new Error('第一个参数必须是方法')
   let time
   //  立刻执行第一次该方法
   if (immediate) {

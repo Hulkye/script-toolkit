@@ -5,8 +5,8 @@
  */
 
 function isDigit(value) {
-  var patrn = /^[0-9]*$/
-  return !(patrn.exec(value) == null || value == '')
+  let patrn = /^[0-9]*$/
+  return !(!patrn.exec(value) || value === '')
 }
 
 export default isDigit

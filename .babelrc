@@ -4,14 +4,23 @@
       "@babel/preset-env",
       {
         "targets": {
-          "browsers": "last 10 versions, > 1%, ie >= 9, Android >= 4.4, iOS >= 8",
+          "browsers": "last 10 versions, > 1%, ie >= 7, Android >= 4.4, iOS >= 8",
           "node": "current"
         },
-        "modules": false,
-        "useBuiltIns": "entry"
+        "modules": false, // 将ES6模块语法转换为另一种模块类型
+        "corejs": "3",
+        "useBuiltIns": "usage" // 检测代码中ES6/7/8等的使用情况，仅(无需手动引入)加载代码中用到的polyfills
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "corejs": 3
       }
     ]
   ],
   "sourceType": "unambiguous", // 严格区分commonJS文件和ES6文件
-  "ignore": ["node_modules"]
+  "ignore": ["node_modules/**"]
 }

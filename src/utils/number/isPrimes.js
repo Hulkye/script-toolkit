@@ -8,11 +8,11 @@ function isPrimes(number) {
   if (typeof number !== 'number') {
     throw Error('isPrimes first argument is not a number')
   }
-  if (number == 1) {
+  if (number === 1) {
     return false
   }
   for (let i = 2; i <= Math.sqrt(number); i++) {
-    if (number % i == 0) {
+    if (number % i === 0) {
       return false
     }
   }

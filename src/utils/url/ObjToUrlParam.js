@@ -8,7 +8,7 @@
 function ObjToUrlParam(obj) {
   let result = ''
   for (let key in obj) {
-    result += key + '=' + encodeURIComponent(obj[key]) + '&'
+    result += `${key}=${encodeURIComponent(obj[key])}&`
   }
   result = result.substr(0, result.length - 1)
   return result

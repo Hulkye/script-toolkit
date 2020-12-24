@@ -13,7 +13,7 @@ export function deleteUrlParam(paramNames, url = location.href) {
   const hostAndPath = url.split('?')[0]
   const urlSearch = new URLSearchParams(newSearch)
   paramNames.forEach(param => {
-    urlSearch.delete(param)
+    urlSearch['delete'](param)
   })
   return urlSearch.toString() ? `${hostAndPath}?${urlSearch.toString()}` : hostAndPath
 }

@@ -1,8 +1,13 @@
 # Script-Toolkit
 
+[![License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/Hulkye/script-toolkit/blob/main/LICENSE) [![NPM version](https://img.shields.io/npm/v/script-toolkit.svg)](https://www.npmjs.com/package/script-toolkit)
+
+
+
 ## Description
 
 JavaScript工具箱子，前端业务开发工具，提高开发效率
+
 
 
 
@@ -74,3 +79,16 @@ console.log(jsTools)
 ## Document
 
 TODO
+
+
+
+## Todo
+
+- [x] 支持浏览器环境，node 环境、es6 环境
+- [x] 拆分代码，es模式中按需引入
+- [x] 构建工具由webpack转为rollup
+- [x] 增加`@babel/polyfill`垫片兼容低版本js
+- [x] 引入代码校验工具 eslint
+- [ ] 自动化生成 api 文档
+- [ ] 添加代码测试工具
+

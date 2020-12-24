@@ -6,7 +6,7 @@
  */
 
 function throttleFn(fn, t = 1000) {
-  if (typeof fn !== 'function') throw new Error(`第一个参数必须是方法`)
+  if (typeof fn !== 'function') throw new Error('第一个参数必须是方法')
   const _fn = fn
   let time = null
   let first = true

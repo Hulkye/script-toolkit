@@ -15,7 +15,7 @@ function curryFn(fn, ...arg) {
     const _args = Array.from(arguments)
     args.push(..._args)
     if (args.length < len) {
-      return curry.call(_this, fn, ...args)
+      return curryFn.call(_this, fn, ...args)
     }
 
     return fn.apply(_this, args)

@@ -6,7 +6,7 @@
 
 function getIEVersion() {
   if (window.ActiveXObject) {
-    var v = window.navigator.userAgent.match(/MSIE ([^;]+)/)[1]
+    let v = window.navigator.userAgent.match(/MSIE ([^;]+)/)[1]
     return parseFloat(v.substring(0, v.indexOf('.')))
   }
   return false
