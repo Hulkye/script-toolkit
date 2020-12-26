@@ -78,7 +78,9 @@ console.log(jsTools)
 
 ## Document
 
-TODO
+在线API文档（需要外网支持）：[api-doc-page](https://hulkye.github.io/script-toolkit)
+
+todo：Markdown文档
 
 
 
