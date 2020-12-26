@@ -1,0 +1,26 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "source": {
+    "include": ["src"],
+    "exclude": ["src/index.js"],
+    "includePattern": ".+\\.js(doc)?$",
+    "excludePattern": ".*index."
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "useLongnameInNav": false,
+    "showInheritedInNav": true
+  },
+  "opts": {
+    "template": "./node_modules/minami",
+    "encoding": "utf8",
+    "destination": "./api-docs/",
+    "private": true,
+    "recurse": true
+  }
+}
